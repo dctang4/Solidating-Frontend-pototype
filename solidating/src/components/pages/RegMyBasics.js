@@ -1,8 +1,8 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React, {useState} from 'react';
+import {useNavigate} from 'react-router-dom';
 import './RegMyBasics.scss';
 
-const RegMyBasics = (props) => {
+const RegMyBasics = ({handleAdd}) => {
 
 }
 

@@ -7,7 +7,7 @@ import Login from './pages/Login';
 import RegPhone from './pages/RegPhone';
 import RegName from './pages/RegName';
 import RegEmail from './pages/RegEmail';
-import RegBirthday from './pages/RegBirthday';
+import RegBirthdate from './pages/RegBirthdate';
 import RegGender from './pages/RegGender';
 import RegInterest from './pages/RegInterest';
 import RegLocation from './pages/RegLocation';
@@ -51,8 +51,8 @@ const Main = ({ userInfo, handleAdd }) => {
         />
 
         <Route
-          path='birthday'
-          element={<RegBirthday handleAdd={handleAdd} />}
+          path='birthdate'
+          element={<RegBirthdate handleAdd={handleAdd} />}
         />
 
         <Route 

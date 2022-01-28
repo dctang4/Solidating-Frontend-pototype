@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import './RegName.scss';
 
 const RegName = ({handleAdd}) => {
+
+  const navigate = useNavigate();
 
   const [name, setName] = useState({
     name: {firstName: '', lastName: ''}
@@ -10,50 +12,46 @@ const RegName = ({handleAdd}) => {
 
   const handleChange = (event) => {
 
-    if (event.target.className === 'first-name') {
-      setName({
-        name: {...name.name, firstName: event.target.value},
-      })
-    }
-    else {
-      setName({
-        name: {...name.name, lastName: event.target.value},
-      })
-    }
+    setName({
+      name: {...name.name, [event.target.name]: event.target.value}
+    })
     
   }
   const handleContinue = (event) => {
     event.preventDefault();
     handleAdd(name)
+    navigate('../email')
   }
 
   return (
     <div className='name-reg'>
       {/* <img alt='text bar icon'/> */}
       <h1>What's your name?</h1>
-      <form>
+      <form onSubmit={handleContinue}>
         <input
           type='text'
           className='first-name'
+          name='firstName'
           placeholder='First Name'
           value={name.name.firstName}
           onChange={handleChange}
-          alt='country code'
+          alt='first name'
         />
         <input
           type='text'
           className='last-name'
+          name='lastName'
           placeholder='Last Name'
           value={name.name.lastName}
           onChange={handleChange}
-          alt='country code'
+          alt='last name'
         />
-        <button 
+        <input 
+          type='submit'
           className='continue-Bt'
-          onClick={handleContinue}
-        >
-          <Link to='../email'>Continue</Link>
-        </button>
+          value='Continue'
+          alt='Continue button'
+        />
       </form>
       
     </div>
