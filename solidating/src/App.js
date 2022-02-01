@@ -21,8 +21,8 @@ function App() {
     location: '',
     passions: '',
     photos: '',
-    mybasics: '',
-    avoidcontacts: '',
+    myBasics: '',
+    avoidContacts: '',
   });
 
   const handleAdd = (info) => {

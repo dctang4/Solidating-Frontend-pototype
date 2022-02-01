@@ -6,32 +6,58 @@ const RegPhotos = ({handleAdd}) => {
 
   const navigate = useNavigate();
 
-  const [photos, setPhotos] = useState({photos: ''})
+  const [photos, setPhotos] = useState({photos: []})
+  const [photoSelect, setPhotoSelect] = useState()
+
+  const photosDisplay = photos.photos.map((photo, index) => {
+    let url = URL.createObjectURL(photo)
+    return (
+      <div className='photo' key={index} >
+        <img src={url} className='photo' />
+      </div>
+    )
+  })
+
 
   const handleChange = (event) => {
-
-    setPhotos({photos: event.target.value})
+    event.preventDefault()
+    setPhotoSelect(event.target.files[0])
 
   }
+
+  const handleUpload = (event) => {
+    event.preventDefault();
+    setPhotos({photos: [...photos.photos, photoSelect ]})
+
+  }
+
+  
+
   const handleContinue = (event) => {
     event.preventDefault();
     handleAdd(photos)
-    navigate('../mybasics')
+    navigate('../myBasics')
   }
 
   return (
     <div className='photos-reg'>
       {/* <img alt='photos icon'/> */}
-      <h1>What's your photos?</h1>
+      <h1>Add Photos here!</h1>
+      {photosDisplay}
       <form onSubmit={handleContinue}>
         <input
-          type='text'
-          className='loaction'
-          name='photos'
-          placeholder='Enter photos Manually'
-          value={photos.photos}
+          type='file'
+          accept='image/*'
+          className='photo-select'
           onChange={handleChange}
-          alt='input for your photos'
+          alt='file selector for photos'
+        />
+        <input
+          type='button'
+          className='photo-upload'
+          value='Upload'
+          onClick={handleUpload}
+          alt='upload photo'
         />
         <input 
           type='submit'

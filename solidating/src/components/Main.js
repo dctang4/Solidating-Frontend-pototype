@@ -81,12 +81,12 @@ const Main = ({ userInfo, handleAdd }) => {
         />
 
         <Route
-          path='mybasics'
+          path='myBasics'
           element={<RegMyBasics handleAdd={handleAdd} />}
         />
 
         <Route
-          path='avoidcontacts'
+          path='avoidContacts'
           element={<RegAvoidContacts handleAdd={handleAdd} />}
         />
 
