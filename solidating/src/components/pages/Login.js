@@ -7,7 +7,7 @@ const Login = (props) => {
   return (
     <div className='login'>
       {/* <img alt='solidating logo'/> */}
-      <h1>Solidating</h1>
+      <h1>solidating</h1>
       <button>
         <Link to='phone'>Login</Link>
       </button>

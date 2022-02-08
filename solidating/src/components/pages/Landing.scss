@@ -1,4 +1,34 @@
-h1 {
-  color: black;
-  font-size: 30px;
+.landing {
+  height: 100vh;
+
+  background-image: linear-gradient(150deg, #2E22AC, #DF4B9C);
+
+  h1 {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    padding: 200px 0;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    text-shadow: rgb(255, 0, 0) 1px 0px 0px, rgb(255, 0, 0) 0.540302px 0.841471px 0px, rgb(255, 0, 0) -0.416147px 0.909297px 0px, rgb(255, 0, 0) -0.989992px 0.14112px 0px, rgb(255, 0, 0) -0.653644px -0.756802px 0px, rgb(255, 0, 0) 0.283662px -0.958924px 0px, rgb(255, 0, 0) 0.96017px -0.279415px 0px;
+  }
+
+  button {
+    border: solid 1px;
+    border-color: red;
+    border-radius: 10px;
+    background-color: #46289C;
+    height: 35px;
+    width: 250px;
+    a {
+      color: red;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  }
 }
+

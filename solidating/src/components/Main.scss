@@ -1,0 +1,18 @@
+@import "./scss/config";
+
+.main {
+  form {
+    input {
+      display: block;
+      margin: 5px auto;
+    }
+    input[type="button"] {
+      @include buttons(white, 30px, 175px)
+    }
+    input[type="submit"] {
+      @include continue();
+    }
+  }
+  
+  
+}

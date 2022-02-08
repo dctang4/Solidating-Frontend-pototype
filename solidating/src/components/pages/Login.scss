@@ -1,0 +1,28 @@
+.login {
+  height: 100vh;
+
+  background-image: linear-gradient(150deg, #2E22AC, #DF4B9C);
+
+  h1 {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    padding: 200px 0;
+  }
+
+  button {
+    border: solid 1px;
+    border-color: red;
+    border-radius: 10px;
+    background-color: #46289C;
+    height: 35px;
+    width: 250px;
+    margin: 5px;
+    a {
+      color: red;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  }
+}
+

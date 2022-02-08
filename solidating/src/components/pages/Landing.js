@@ -7,7 +7,8 @@ const Landing = (props) => {
   return (
     <div className='landing'>
       {/* <img alt='solidating logo'/> */}
-      <h1>Solidating</h1>
+      <h1>solidating</h1>
+      <h2>WELCOME</h2>
       <button>
         <Link to='login'>Let's Get Started!</Link>
       </button>

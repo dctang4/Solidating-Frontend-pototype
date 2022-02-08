@@ -19,7 +19,7 @@ import RegWelcome from './pages/RegWelcome';
 
 const Main = ({ userInfo, handleAdd }) => {
   return (
-    <div>
+    <div className='main'>
       <Routes>
         <Route 
           path='/' 
