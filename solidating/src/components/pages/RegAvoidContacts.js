@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import './RegAvoidContacts.scss';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const RegAvoidContacts = ({handleAdd}) => {
 
   const navigate = useNavigate();
@@ -43,8 +45,12 @@ const RegAvoidContacts = ({handleAdd}) => {
 
   return (
     <div className='avoidContacts-reg'>
-      {/* <img alt='question mark inside circle icon'/> */}
-      <h1>Want to avoid someone in your Contact list?</h1>
+      <FontAwesomeIcon 
+        icon={['fas', 'exclamation-triangle' ]}
+        className='myBasics-icon icon'
+        alt='my basics icon'
+      />
+      <h1 className='signup-header'>Want to avoid someone in your Contact list?</h1>
       <form onSubmit={handleContinue}>
         <select value={avoidContactSelect} onChange={handleChange}>
           {contactList}

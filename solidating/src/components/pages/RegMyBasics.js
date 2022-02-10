@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './RegMyBasics.scss';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const RegMyBasics = ({ handleAdd }) => {
   const navigate = useNavigate();
 
@@ -30,8 +32,12 @@ const RegMyBasics = ({ handleAdd }) => {
 
   return (
     <div className='myBasics-reg'>
-      {/* <img alt='profile icon'/> */}
-      <h1>My Basics</h1>
+      <FontAwesomeIcon 
+        icon={['far', 'id-card' ]}
+        className='myBasics-icon icon'
+        alt='my basics icon'
+      />
+      <h1 className='signup-header'>My Basics</h1>
       <form onSubmit={handleContinue}>
         <input
           type='text'

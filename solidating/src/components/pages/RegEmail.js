@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import './RegEmail.scss';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const RegEmail = ({handleAdd}) => {
 
   const navigate = useNavigate();
@@ -22,8 +24,13 @@ const RegEmail = ({handleAdd}) => {
 
   return (
     <div className='email-reg'>
-      {/* <img alt='email icon'/> */}
-      <h1>What's your email?</h1>
+
+      <FontAwesomeIcon 
+        icon={['far', 'envelope' ]}
+        className='email-icon icon'
+        alt='email icon'
+      />
+      <h1 className='signup-header'>What's your email?</h1>
       <form onSubmit={handleContinue}>
         <input
           type='email'

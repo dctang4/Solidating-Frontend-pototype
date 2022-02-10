@@ -1,2 +1,11 @@
-@import "../scss/config";
 
+.welcome-page {
+  h1 {
+    margin-top: 15vh;
+  }
+  .heart-icon {
+    margin: 0;
+    font-size: 200px;
+    color: red
+  }
+}

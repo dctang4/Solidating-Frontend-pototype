@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import './RegPhone.scss';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const RegPhone = ({handleAdd}) => {
 
   const navigate = useNavigate();
@@ -32,7 +34,12 @@ const RegPhone = ({handleAdd}) => {
   return (
     <div className='phone-reg'>
       {/* <img alt='phone number icon'/> */}
-      <h1>What's your phone number?</h1>
+      <FontAwesomeIcon 
+        icon={['fas', 'phone-square']}
+        className='phoneNumber-icon icon'
+        alt='phone number icon'
+      />
+      <h1 className='signup-header'>What's your phone number?</h1>
       <form onSubmit={handleContinue}>
         <input
           type='tel'

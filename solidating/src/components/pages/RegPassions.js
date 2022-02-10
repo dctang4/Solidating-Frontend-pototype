@@ -29,7 +29,12 @@ const RegPassions = ({ handleAdd }) => {
 
   return (
     <div className='passions-reg'>
-      <h1>Who are you passionate in?</h1>
+      <FontAwesomeIcon 
+        icon={['fas', 'icons']}
+        className='passion-icon icon'
+        alt='passion icon'
+      />
+      <h1 className='signup-header'>Who are you passionate in?</h1>
       <form>
         <button
           className='passions-btn'

@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import './RegPhotos.scss';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const RegPhotos = ({handleAdd}) => {
 
   const navigate = useNavigate();
@@ -41,8 +43,12 @@ const RegPhotos = ({handleAdd}) => {
 
   return (
     <div className='photos-reg'>
-      {/* <img alt='photos icon'/> */}
-      <h1>Add Photos here!</h1>
+      <FontAwesomeIcon 
+        icon={['fas', 'portrait']}
+        className='photos-icon icon'
+        alt='photos icon'
+      />
+      <h1 className='signup-header'>Add Photos here!</h1>
       {photosDisplay}
       <form onSubmit={handleContinue}>
         <input

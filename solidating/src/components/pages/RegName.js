@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import './RegName.scss';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const RegName = ({handleAdd}) => {
 
   const navigate = useNavigate();
@@ -25,8 +27,12 @@ const RegName = ({handleAdd}) => {
 
   return (
     <div className='name-reg'>
-      {/* <img alt='text bar icon'/> */}
-      <h1>What's your name?</h1>
+      <FontAwesomeIcon 
+        icon={['far', 'user' ]}
+        className='name-icon icon'
+        alt='name icon'
+      />
+      <h1 className='signup-header'>What's your name?</h1>
       <form onSubmit={handleContinue}>
         <input
           type='text'

@@ -7,7 +7,7 @@ const RegWelcome = ({userInfo}) => {
     <div className='welcome-page'>
       <h1>Welcome {userInfo.name.firstName} {userInfo.name.lastName}</h1>
       <h2>Let's find your dates!</h2>
-      <h1>&hearts;</h1>
+      <h1 className='heart-icon'>&hearts;</h1>
     </div>
   )
 }

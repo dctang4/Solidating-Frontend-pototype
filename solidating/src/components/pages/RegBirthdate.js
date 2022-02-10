@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import './RegBirthdate.scss';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const RegBirthdate = ({handleAdd}) => {
 
   const navigate = useNavigate();
@@ -27,7 +29,12 @@ const RegBirthdate = ({handleAdd}) => {
   return (
     <div className='birthdate-reg'>
       {/* <img alt='calender icon'/> */}
-      <h1>What's your Birthdate?</h1>
+      <FontAwesomeIcon 
+        icon={['far', 'calendar-alt']}
+        className='calender-icon icon'
+        alt='calender icon'
+      />
+      <h1 className='signup-header'>What's your Birthdate?</h1>
       <form onSubmit={handleContinue}>
         <input
           type='date'
