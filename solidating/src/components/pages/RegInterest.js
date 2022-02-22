@@ -61,7 +61,7 @@ const RegInterest = ({handleAdd}) => {
         />
         <input 
           type='submit'
-          className='continue-Bt'
+          className='continue-btn'
           value='Continue'
           alt='Continue button'
         />

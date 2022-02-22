@@ -35,7 +35,7 @@ const RegPassions = ({ handleAdd }) => {
         alt='passion icon'
       />
       <h1 className='signup-header'>Who are you passionate in?</h1>
-      <form>
+      <form className='passions-form'>
         <button
           className='passions-btn'
           name='exercise'
@@ -44,7 +44,7 @@ const RegPassions = ({ handleAdd }) => {
         >
           <FontAwesomeIcon icon={['fas', 'dumbbell']} />
         </button>
-        <br />
+        {/* <br /> */}
 
         <button
           className='passions-btn'
@@ -54,7 +54,7 @@ const RegPassions = ({ handleAdd }) => {
         >
           <FontAwesomeIcon icon={['fas', 'coffee']} />
         </button>
-        <br />
+        {/* <br /> */}
 
         <button
           className='passions-btn'
@@ -64,7 +64,7 @@ const RegPassions = ({ handleAdd }) => {
         >
           <FontAwesomeIcon icon={['fas', 'hot-tub']} />
         </button>
-        <br />
+        {/* <br /> */}
 
         <button
           className='passions-btn'
@@ -74,7 +74,7 @@ const RegPassions = ({ handleAdd }) => {
         >
           <FontAwesomeIcon icon={['fas', 'golf-ball']} />
         </button>
-        <br />
+        {/* <br /> */}
 
         <button
           className='passions-btn'
@@ -84,7 +84,7 @@ const RegPassions = ({ handleAdd }) => {
         >
           <FontAwesomeIcon icon={['fas', 'graduation-cap']} />
         </button>
-        <br />
+        {/* <br /> */}
 
         <button
           className='passions-btn'
@@ -94,7 +94,7 @@ const RegPassions = ({ handleAdd }) => {
         >
           <FontAwesomeIcon icon={['fas', 'swimming-pool']} />
         </button>
-        <br />
+        {/* <br /> */}
 
         <button
           className='passions-btn'
@@ -104,7 +104,7 @@ const RegPassions = ({ handleAdd }) => {
         >
           <FontAwesomeIcon icon={['fas', 'mobile-alt']} />
         </button>
-        <br />
+        {/* <br /> */}
 
         <button
           className='passions-btn'
@@ -114,7 +114,7 @@ const RegPassions = ({ handleAdd }) => {
         >
           <FontAwesomeIcon icon={['fas', 'car']} />
         </button>
-        <br />
+        {/* <br /> */}
 
         <button
           className='passions-btn'
@@ -124,7 +124,7 @@ const RegPassions = ({ handleAdd }) => {
         >
           <FontAwesomeIcon icon={['fas', 'biking']} />
         </button>
-        <br />
+        {/* <br /> */}
 
         <button
           className='passions-btn'
@@ -134,7 +134,7 @@ const RegPassions = ({ handleAdd }) => {
         >
           <FontAwesomeIcon icon={['fas', 'paint-brush']} />
         </button>
-        <br />
+        {/* <br /> */}
 
         <button
           className='passions-btn'
@@ -144,7 +144,7 @@ const RegPassions = ({ handleAdd }) => {
         >
           <FontAwesomeIcon icon={['fas', 'plane']} />
         </button>
-        <br />
+        {/* <br /> */}
 
         <button
           className='passions-btn'
@@ -154,11 +154,11 @@ const RegPassions = ({ handleAdd }) => {
         >
           <FontAwesomeIcon icon={['fas', 'utensils']} />
         </button>
-        <br />
+        {/* <br /> */}
 
         <input 
           type='submit'
-          className='continue-Bt'
+          className='continue-btn'
           value='Continue'
           onClick={handleContinue}
           alt='Continue button'

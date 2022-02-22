@@ -10,19 +10,37 @@
     padding: 200px 0;
   }
 
-  button {
-    border: solid 1px;
-    border-color: red;
-    border-radius: 10px;
-    background-color: #46289C;
-    height: 35px;
-    width: 250px;
-    margin: 5px;
-    a {
+  a {
+    button {
+      border: solid 1px;
+      border-color: red;
+      border-radius: 10px;
+      background-color: #46289C;
       color: red;
-      text-decoration: none;
       font-size: 16px;
+      margin: 5px;
+      height: 35px;
+      width: 250px;
+      transition: all 0.2s;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
     }
   }
+  // button {
+  //   border: solid 1px;
+  //   border-color: red;
+  //   border-radius: 10px;
+  //   background-color: #46289C;
+  //   height: 35px;
+  //   width: 250px;
+  //   margin: 5px;
+  //   a {
+  //     color: red;
+  //     text-decoration: none;
+  //     font-size: 16px;
+  //   }
+  // }
 }
 

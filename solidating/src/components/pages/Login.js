@@ -8,12 +8,14 @@ const Login = (props) => {
     <div className='login'>
       {/* <img alt='solidating logo'/> */}
       <h1>solidating</h1>
-      <button>
-        <Link to='phone'>Login</Link>
-      </button>
-      <button>
-        <Link to='../phone'>Signup</Link>
-      </button>
+      <Link to='phone'>
+        <button>Login</button>
+      </Link>
+      
+      <Link to='../phone'>
+        <button>Signup</button>
+      </Link>
+      
     </div>
   )
 

@@ -9,9 +9,10 @@ const Landing = (props) => {
       {/* <img alt='solidating logo'/> */}
       <h1>solidating</h1>
       <h2>WELCOME</h2>
-      <button>
-        <Link to='login'>Let's Get Started!</Link>
-      </button>
+      <Link to='login'>
+        <button>Let's Get Started!</button>
+      </Link>
+      
     </div>
   )
   
